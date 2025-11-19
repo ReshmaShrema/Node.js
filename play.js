@@ -1,10 +1,11 @@
 // Global variables
-var fullName = "Reshma"; //string
+const fullName = "Reshma"; //string
 console.log(fullName);
-var age = 29; //number
+let age = 29; //number
 console.log(age);
-var hasHobbies = true; //boolean
+const hasHobbies = true; //boolean
 console.log(hasHobbies);
+age = 30;
 // node play.js
 
 //function definition , pure function
