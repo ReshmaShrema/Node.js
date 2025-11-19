@@ -8,8 +8,8 @@ console.log(hasHobbies);
 age = 30;
 // node play.js
 
-//function definition , pure function
-function summarizeUser(username, userAge, userHasHobbies) {
+//function definition , pure function, anonymous function
+const summarizeUser = function (username, userAge, userHasHobbies) {
   // local variable and argument  -> username, userAge, userHasHobbies
   return (
     "Name is " +
@@ -19,6 +19,6 @@ function summarizeUser(username, userAge, userHasHobbies) {
     " and the user has hobbie " +
     userHasHobbies
   );
-}
+};
 // function calling
 console.log(summarizeUser(fullName, age, hasHobbies));
