@@ -22,3 +22,14 @@ const summarizeUser = function (username, userAge, userHasHobbies) {
 };
 // function calling
 console.log(summarizeUser(fullName, age, hasHobbies));
+
+// object
+const person = {
+  name: "Reshma",
+  age: 29,
+  greet: function () {
+    console.log("Hi My name is ", this.name);
+  },
+};
+
+person.greet();
