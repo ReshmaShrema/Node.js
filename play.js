@@ -27,8 +27,8 @@ console.log(summarizeUser(fullName, age, hasHobbies));
 const person = {
   name: "Reshma",
   age: 29,
-  greet: () => {
-    console.log("Hi My name is ", person.name);
+  greet() {
+    console.log("Hi My name is ", this.name);
   },
 };
 
