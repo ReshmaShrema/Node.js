@@ -84,3 +84,7 @@ const printName = ({ name }) => {
 };
 
 printName(person);
+
+// array destructuring
+const [item1, item2] = items;
+console.log(item1, item2);
