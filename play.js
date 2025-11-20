@@ -88,3 +88,10 @@ printName(person);
 // array destructuring
 const [item1, item2] = items;
 console.log(item1, item2);
+
+// asynchronous and synchronous code
+setTimeout(() => {
+  console.log("Timer is done!");
+}, 1000);
+console.log("Hello");
+console.log("Hai");
