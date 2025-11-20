@@ -48,3 +48,5 @@ console.log(
 );
 
 console.log(items.map((item) => `items-${item}`));
+
+const arrayLength = items.push(1);
