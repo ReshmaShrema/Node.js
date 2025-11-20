@@ -52,3 +52,4 @@ console.log(items.map((item) => `items-${item}`));
 const arrayLength = items.push(1);
 // coppy
 const coppiedArray = items.slice();
+const coppiedBySpread = [...items];
