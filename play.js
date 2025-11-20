@@ -55,6 +55,7 @@ const copiedArray = items.slice();
 const copiedBySpread = [...items]; //spread operator
 const coppyedObje = { ...person };
 
+// rest operator in  funcion parameter
 const toArrayWithoutDestructure = (arg1, arg2, arg3) => {
   return [arg1, arg2, arg3];
 };
@@ -66,3 +67,20 @@ const toArrayWithDestructure = (...argz) => {
 };
 
 console.log(toArrayWithDestructure(1, 2, 3, 4, 5, 6));
+
+// rest operator in destructuring
+const { name } = person;
+const { name: userName } = person; //assigning to new variable
+console.log(name, userName);
+
+// with destructuring
+const printNameWithoutDestructuring = (personData) => {
+  console.log(personData.name);
+};
+printNameWithoutDestructuring(person);
+// with destructuring
+const printName = ({ name }) => {
+  console.log(name);
+};
+
+printName(person);
