@@ -109,3 +109,25 @@ setTimeout(() => {
     console.log(text);
   });
 }, 1000);
+
+// promise
+const promiseDemo = () => {
+  const promise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("Promise Done");
+    }, 1500);
+  });
+  return promise;
+};
+
+setTimeout(() => {
+  console.log(" Timer for promise");
+  promiseDemo()
+    .then((text) => {
+      console.log("text", text);
+      return promiseDemo();
+    })
+    .then((text2) => {
+      console.log("text2", text2);
+    });
+}, 3000);
