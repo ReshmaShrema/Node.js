@@ -33,3 +33,18 @@ const person = {
 };
 
 person.greet();
+
+// array
+const items = ["item1", 2, true, [1, 2, 3], { name: "Reshma", age: 29 }];
+// iteration
+for (let item of items) {
+  console.log(`items-${item}`);
+}
+
+console.log(
+  items.map((item) => {
+    return `items-${item}`;
+  })
+);
+
+console.log(items.map((item) => `items-${item}`));
