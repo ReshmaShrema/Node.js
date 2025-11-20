@@ -51,5 +51,18 @@ console.log(items.map((item) => `items-${item}`));
 
 const arrayLength = items.push(1);
 // coppy
-const coppiedArray = items.slice();
-const coppiedBySpread = [...items];
+const copiedArray = items.slice();
+const copiedBySpread = [...items]; //spread operator
+const coppyedObje = { ...person };
+
+const toArrayWithoutDestructure = (arg1, arg2, arg3) => {
+  return [arg1, arg2, arg3];
+};
+
+console.log(toArrayWithoutDestructure(1, 2, 3, 4, 5, 6));
+
+const toArrayWithDestructure = (...argz) => {
+  return argz;
+};
+
+console.log(toArrayWithDestructure(1, 2, 3, 4, 5, 6));
